@@ -3,63 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot E-commerce</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Your Hot Ecommerce Site</title>
+    <!-- Link to style.css in the root folder -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Welcome to Your Hot Ecommerce Site! Discover and shop the latest products at great prices.">
+    <meta name="keywords" content="Ecommerce, Products, Shop, Deals">
+    <meta name="author" content="Your Name">
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Your Hot Ecommerce Site</h1>
+        <p>Your one-stop destination for amazing deals and products!</p>
+    </header>
 
-    <!-- Hero Section with a Stunning Image -->
-    <section class="hero">
-        <div class="overlay">
-            <h1 class="hero-title">Get Business Quotes in Style</h1>
-            <p class="hero-subtitle">Fast, Efficient, and Professional Quotations for Your Needs.</p>
-            <a href="#products" class="btn hero-btn">Explore Products</a>
-        </div>
-    </section>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Featured Products Section -->
-    <section id="products" class="products container mt-5">
-        <h2 class="text-center my-4">Hot Products of the Month</h2>
-        <div id="products-container" class="row"></div>
-    </section>
-
-    <!-- Modal for Requesting Quote -->
-    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="quoteModalLabel">Request a Hot Quote</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="quoteForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tell us your needs</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+    <!-- Main content section -->
+    <main>
+        <!-- Product section -->
+        <section id="products">
+            <h2>Our Products</h2>
+            <p>Explore our wide range of products tailored to meet your needs.</p>
+            <!-- Sample product cards -->
+            <div class="product-card">
+                <img src="sample-product.jpg" alt="Sample Product">
+                <h3>Sample Product</h3>
+                <p>₹999.00</p>
+                <button>Add to Cart</button>
             </div>
-        </div>
-    </div>
+            <div class="product-card">
+                <img src="sample-product-2.jpg" alt="Sample Product 2">
+                <h3>Sample Product 2</h3>
+                <p>₹1,299.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- More products can be added here -->
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- About section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing high-quality products and exceptional customer service. Your satisfaction is our priority!</p>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Reach out to us through the following channels:</p>
+            <ul>
+                <li>Email: support@hotecommercesite.com</li>
+                <li>Phone: +91-123-456-7890</li>
+                <li>Address: 123 Market Street, Mumbai, India</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Your Ecommerce Site | All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- Link to script.js in the root folder -->
     <script src="script.js"></script>
-
 </body>
 </html>
-
